@@ -24,20 +24,6 @@ function onGalleryContainerClick(event) {
 
     // ----SimpleLightbox----
 
-
-    `<div class="gallery">
-    <a href="${event.target.getAttribute(
-      "href"
-    )}"><img src="${event.target.getAttribute(
-    "src"
-  )}" alt="${event.target.getAttribute("alt")}" /></a>
-    <a href="${event.target.getAttribute(
-      "href"
-    )}"><img src="${event.target.getAttribute(
-    "src"
-  )}" alt="${event.target.getAttribute("alt")}"/></a>
-   </div>
-    `; 
 };
 
 let gallery = new SimpleLightbox(".gallery a", {
@@ -48,4 +34,4 @@ let gallery = new SimpleLightbox(".gallery a", {
 
 gallery.on("show.simplelightbox");
 
-console.log(galleryItems);
+

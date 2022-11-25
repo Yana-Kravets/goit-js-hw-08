@@ -15,7 +15,7 @@ form.addEventListener(
 
 form.addEventListener('submit', e => {
   e.preventDefault();
-  console.log({ email: email.value, message: message.value });
+  // console.log({ email: email.value, message: message.value });
   form.reset();
   localStorage.removeItem(LOCALSTORAGE_KEY);
 });
@@ -25,7 +25,7 @@ const load = key => {
     const serializedState = localStorage.getItem(key);
     return serializedState === null ? undefined : JSON.parse(serializedState);
   } catch (error) {
-    console.error('Get state error: ', error.message);
+    // console.error('Get state error: ', error.message);
   }
 };
 
